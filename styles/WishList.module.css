@@ -1,0 +1,6 @@
+.headerImg{
+    width: 100% !important;
+    height: 45vh !important;
+    object-fit: cover;
+    position: unset !important;
+}

@@ -1,0 +1,110 @@
+.prodImage {
+  width: 100% !important;
+  height: 70vh !important;
+  object-fit: cover !important;
+}
+
+
+.extraProductImage {
+  height: 23vh !important;
+  width: 100%;
+  margin: 1px 0px;
+  object-fit: cover;
+}
+
+.extraProductImageWrapper {
+  height: 23vh !important;
+  width: 100%;
+  margin: 1px 0px;
+  object-fit: cover;
+}
+
+.prodName {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 39px;
+  letter-spacing: -0.02em;
+  color: #030203;
+}
+
+
+.prodPrice {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  color: #030203;
+}
+
+.prodSize {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  color: #030203;
+}
+
+.sizeSelect {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(3, 2, 3, 0.5) !important;
+  border-radius: 2px !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #030203;
+}
+
+.sizeSelect:focus {
+  box-shadow: none !important;
+}
+
+.addBtn{
+  background: #030203;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+
+@media (max-width:990px) {
+  .photoBar {
+    flex-direction: column;
+  }
+
+  .mainRow{
+    padding-top: 1.5rem !important;
+  }
+
+  .extraProductImageWrapper {
+    height: 20vh !important;
+    width: 100%;
+    padding-left: 5px !important;
+  }
+
+  .prodImage {
+    width: 100% !important;
+    height: 61vh !important;
+    object-fit: cover !important;
+    padding-left: 5px ;
+  }
+  
+  
+  .extraProductImage {
+    height: 20vh !important;
+    width: 100%;
+    margin: 1px 0px;
+    object-fit: cover;
+  }
+  
+  .addBtn{
+    width: 100%;
+  }
+}

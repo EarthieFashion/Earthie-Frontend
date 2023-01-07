@@ -1,0 +1,110 @@
+.HeadImage {
+    width: 100vw !important;
+    height: 50vh !important;
+    object-fit: cover;
+}
+
+.formWrapper {
+    width: 25vw;
+    height: 68vh;
+    background: #F2F2F2;
+    border: 2px solid rgba(3, 2, 3, 0.2);
+    box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.08);
+    border-radius: 15px 15px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 370px !important;
+}
+
+.formHead {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 49px;
+    /* identical to box height */
+    color: #030203;
+}
+
+.supportText {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #030203;
+}
+
+.inputWrapper {
+    background: #FFFFFF;
+    border: 1.5px solid rgba(3, 2, 3, 0.5);
+    border-radius: 5px;
+}
+
+.formIcon {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #030203;
+
+    opacity: 0.7;
+}
+
+.formInputs {
+    outline: none !important;
+    border: none !important;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #030203;
+
+    opacity: 0.9;
+}
+
+.formInputs:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.formInputs:-internal-autofill-selected {
+    background-color: #FFFFFF !important;
+}
+
+.otherLinks {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #030203;
+}
+
+.underLinks {
+    text-decoration: none;
+}
+
+
+.lastLinks {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #030203;
+}
+
+.subBtn {
+    background: #030203;
+    border-radius: 7px !important;
+}

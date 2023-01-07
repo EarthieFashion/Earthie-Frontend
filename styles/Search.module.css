@@ -1,0 +1,39 @@
+.SearchWrapper {
+    position: fixed;
+    width: 90vw;
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 16%);
+    border-radius: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    top: 75px;
+}
+
+.searchBar {
+    width: 90%;
+    border: none;
+}
+
+.searchBar:focus-visible{
+    outline: none;
+}
+
+.resultHead {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height */
+
+    letter-spacing: -0.02em;
+    /* height: 200VH; */
+
+    color: #030203;
+}
+
+.prodContainer{
+    position: relative;
+    padding-top: 125px;
+}

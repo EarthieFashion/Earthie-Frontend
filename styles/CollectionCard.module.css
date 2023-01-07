@@ -1,0 +1,25 @@
+.productCard {
+    width: 215px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.productDetails {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+    position: relative;
+    top: 80%;
+}
+
+
+.addBtn{
+    background: #030203;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

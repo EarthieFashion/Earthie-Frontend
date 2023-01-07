@@ -1,0 +1,118 @@
+.mainnav {
+    position: fixed;
+    width: 90vw;
+    background: #030203;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.initials {
+    color: white;
+    background-color: darkgoldenrod;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+}
+
+.navlinks {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navlinks:hover {
+    color: #f8f8f8;
+}
+
+.linkscontainer {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.loginWrapper {
+    background: #FFFFFF;
+    border-radius: 29px;
+}
+
+.loginBtn {
+    text-decoration: none;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #030203;
+
+}
+
+.loginBtn:hover {
+    color: #232323;
+}
+
+.rightPhone {
+    display: none;
+}
+
+.menuBtn {
+    font-size: x-large;
+}
+
+.searchPhone {
+    text-decoration: none !important;
+    color: #FFFFFF;
+    font-size: x-large;
+
+}
+
+.phoneDrawer {
+    display: none !important;
+}
+
+.phoneLinks {
+    text-decoration: none;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #030203;
+    /* background-color: #0302032b; */
+    border-radius: 25px;
+}
+
+
+@media (max-width:768px) {
+
+    .linkscontainer,
+    .rightContainer {
+        display: none !important;
+    }
+
+    .rightPhone {
+        display: flex;
+        color: #FFFFFF;
+        align-items: center;
+    }
+
+    .phoneDrawer {
+        display: flex !important;
+        height: 60vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 100;
+        bottom: -100%;
+        background: #FDFDFD;
+        opacity: 0.97;
+        box-shadow: 0px -7.12836px 11.8806px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(77.2239px);
+        border-radius: 24px 24px 0 0;
+        transition: ease-in 0.5s;
+    }
+    
+}
