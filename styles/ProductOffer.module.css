@@ -1,0 +1,107 @@
+.productCard {
+    width: 215px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: none !important; */
+}
+
+
+.prodImages {
+    width: 215px !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: unset !important;
+    right: unset !important;
+    bottom: unset !important;
+}
+
+.newProdImage {
+    width: 215px !important;
+    height: 280px !important;
+    object-fit: cover !important;
+}
+
+.productDetails {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+    position: relative;
+    top: -30%;
+    z-index: 10;
+}
+
+.prodName {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.prodPrice {
+    background: #030203;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.productPrice {
+    color: #FFFFFF;
+}
+
+.productName {
+    color: #030203;
+}
+
+.addBtn {
+    background: #030203;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishWrapper {
+    position: relative;
+    left: 5px;
+    top: 67px;
+    z-index: 10;
+    width: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 6%);
+    aspect-ratio: 1/1;
+    display: flex;
+    margin-top: -37px;
+}
+
+.offerWrapper {
+    position: relative;
+    top: 35px;
+    z-index: 10;
+    width: 80px;
+    height: 31px;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -130px;
+    color: tomato;
+    padding: 2px !important;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.offerWrapper p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #FF0000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------------------------------------------- */

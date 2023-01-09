@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/Image'
 import Head from 'next/head'
 import headImg from '../public/Images/spoffers.png'
 import styles from '../styles/NewArrivals.module.css'
+import axios from 'axios'
+import ProductOffer from '../components/productOffer'
 
-function offers() {
+export async function getStaticProps() {
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_HOST}offerProds/`);
+    const data = res.data;
+
+    return {
+        props: {
+            data,
+        },
+    };
+}
+
+
+function offers(props) {
+    const [offers, setOffers] = useState([]);
+    useEffect(() => {
+        const newData = props.data
+        setOffers(newData)
+    }, [])
+
     return (
         <>
             <Head>
@@ -16,6 +36,21 @@ function offers() {
                 <div className="row">
                     <div className="col-12 h-25" >
                         <Image src={headImg} fill className={styles.headerImg + ' '} />
+                    </div>
+                </div>
+
+                <div className="container">
+
+
+                    <div className="row">
+                        {offers.map((slide) => {
+                            return (
+                                <div key={slide.id} className="col-12 col-lg-3 col-md-4 col-sm-6 my-3 d-flex justify-content-center my-3">
+                                    <ProductOffer productId={slide.id} offerName={slide.offerName} productName={slide.prodcutName} productPrice={slide.offerPrice} productImage={slide.productImage} />
+                                </div>
+                            )
+                        }
+                        )}
                     </div>
                 </div>
             </div>

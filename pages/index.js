@@ -102,11 +102,6 @@ export default function Home(props) {
         </div>
       </div>
 
-      <div className="row">
-        <div className="col-12">
-          <Slider />
-        </div>
-      </div>
       <div className="row mt-2 px-3">
 
         {offers.map((offer) => {
@@ -126,7 +121,7 @@ export default function Home(props) {
 
       <div className="row mt-4">
         <div className="col-12">
-          <h4 className={styles.headText + " mx-3 mb-3"}>Best Sellers</h4>
+          <h4 className={styles.headText + " px-4 mx-4 mb-3"}>Best Sellers</h4>
         </div>
         <div className="col-12">
           <div className="row">

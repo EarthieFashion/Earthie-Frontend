@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Icon } from '@iconify/react';
-import styles from '../styles/Product.module.css'
+import styles from '../styles/ProductOffer.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
@@ -8,9 +8,9 @@ import { data } from 'jquery';
 import { toast } from 'react-toastify';
 
 
-function Product({notify, productId, productName, productPrice, productImage }) {
+function ProductOffer({notify, productId, offerName ,productName, productPrice, productImage }) {
   function truncateString(str) {
-    if (str.length <= 15) {
+    if (str.length <= 18) {
       return str;
     } else {
       return str.substring(0, 15) + "...";
@@ -83,6 +83,7 @@ function Product({notify, productId, productName, productPrice, productImage }) 
 
       <div className={styles.productCard + " mx-2"} >
         <div className={styles.wishWrapper + " p-2"}  onClick={e => addToWishList(productId, productName,productImage,productPrice)}><Icon icon="ph:heart" /> </div>
+        <div className={styles.offerWrapper + " p-2"}> <p className="mb-0">{offerName}</p></div>
         <Link href={`/prods/${productId}`} >
           <div className="image">
             <Image src={process.env.NEXT_PUBLIC_MEDIA_URL + productImage} alt={productName} width={1080} height={1080} className={styles.newProdImage}></Image>
@@ -96,7 +97,6 @@ function Product({notify, productId, productName, productPrice, productImage }) 
             <div className={styles.prodPrice + " col-3 p-0 py-1"}>
               <small className={styles.productPrice + " mx-2  text-center"}>₹{productPrice}</small>
             </div>
-
             <div className={styles.addBtn + " col-12 py-1 mt-1 pb-2"}  onClick={e => addToCart(productId, productName,productImage,productPrice)}>
               <small className='d-flex align-items-center' > Add To Cart </small>
             </div>
@@ -109,4 +109,4 @@ function Product({notify, productId, productName, productPrice, productImage }) 
   )
 }
 
-export default Product
+export default ProductOffer
